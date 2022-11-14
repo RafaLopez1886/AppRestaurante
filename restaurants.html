@@ -1,62 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="own_css/style.css">
     <title>Restaurants</title>
 </head>
+
 <body>
-    <div class="menu_superior">
-        <ul>
-            <li>Directory</li>
-            <li>Restaurants</li>
-            <li>Search</li>
-            <li>New</li>
-        </ul>
-    </div>
+    <!--Menú superior-->
 
-    <div class="lista_restaurantes">
-        <ul>
-            <li>
-                <div class="restaurante">
-                    <img src="images/Pacifico_Mar.jpeg" alt="Pacifico_Mar">
-                    <br>Pacifico Mar
-                    <br>Av. 85 Nro 45 - 85 Barranquilla
-                    <br>Deliciosa comida de mar
+    <nav class="navbar navbar-expand-lg navbar-light bg-success.bg-gradient"
+        style="background: linear-gradient(to right, #b2e1ff, #ffffff)">
+        <div class="container-fluid">
+            <h1>
+                <a class="navbar-brand" href="restaurants.html">AppRestaurants</a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New</a>
+                    </li>
+                    <!--Menú desplegable que comento por si se requiere después-->
+                    <!--
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </ul>
+              </li>
+              -->
+                </ul>
+
+                <!--Búsqueda-->
+                <!--
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            -->
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!--Restaurantes-->
+    <main>
+        <div class="container-fluid height">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 h-100">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card shadow-sm border p-2 h-100">
+                        <img src="images/Pacifico_Mar.jpeg" class="img-fluid" alt="Pacifico_Mar"
+                            style="max-height:450px" />
+                        <span class="align-bottom">
+                            <h2 class="card-title text-center">Pacífico Mar</h2>
+                            <div>
+                                <h4 class="text-center">Av. 85 Nro 45 - 85 Barranquilla</h4>
+                                <h3 class="text-center">Deliciosa comida de mar</h3>
+                            </div>
+                        </span>
+                    </div>
                 </div>
-            </li>
 
-            <li>
-                <div class="restaurante">
-                    <img src="images/Italiano_65.png" alt="Italiano_65">
-                    <br>Italiano 65
-                    <br>Av. 45 Nro 1 - 85 Medellín
-                    <br>Deliciosa comida italiana
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card shadow-sm border p-2 h-100">
+                        <img src="images/Italiano_65.png" class="img-fluid" alt="Italiano_65"
+                            style="max-height:450px" />
+                        <span class="align-bottom">
+                            <h2 class="card-title text-center">Italiano 65</h2>
+                            <div>
+                                <h4 class="text-center">Av. 45 Nro 1 - 85 Medellín</h4>
+                                <h3 class="text-center">Deliciosa comida italiana</h3>
+                            </div>
+                        </span>
+                    </div>
                 </div>
-            </li>
 
-            <li>
-                <div class="restaurante">
-                    <img src="images/Fritos_Y_Mas.jpeg" alt="Fritos_Y_Mas">
-                    <br>Fritos y Más
-                    <br>Calle 45 Medellín
-                    <br>Comida rápida
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card shadow-sm border p-2 h-100">
+                        <img src="images/Fritos_Y_Mas.jpeg" class="img-fluid" alt="Fritos_Y_Mas"
+                            style="max-height:450px" />
+                            <span class="align-bottom">
+                                <h2 class="card-title text-center">Fritos y Más</h2>
+                                <div>
+                                    <h4 class="text-center">Calle 45 Medellín</h4>
+                                    <h3 class="text-center">Comida rápida</h3>
+                                </div>
+                            </span>
+                    </div>
                 </div>
-            </li>
 
-            <li>
-                <div class="restaurante">
-                    <img src="images/Pollo_Frito.jpeg" alt="Pollo_Frito">
-                    <br>Pollo Frito
-                    <br>Cra 32 # 56 - 89
-                    <br>Lo mejor del pollo frito
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card shadow-sm border p-2 h-100">
+                        <img src="images/Pollo_Frito.jpeg" alt="Pollo_Frito" style="max-height:450px" />
+                        <spyan class="align-bottom">
+                            <h2 class="card-title text-center">Pollo Frito</h2>
+                            <div>
+                                <h4 class="text-center">Cra 32 # 56 - 89</h4>
+                                <h3 class="text-center">Lo mejor del pollo frito</h3>
+                            </div>
+                        </span>
+                    </div>
                 </div>
-            </li>
 
-        </ul>
-
-    </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
