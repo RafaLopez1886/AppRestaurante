@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
+@font-face {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Acme/Acme-Regular.ttf') format('ttf');
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
@@ -57,6 +68,18 @@ body {
 
 }
 
-#resultados{
+#resultados {
     margin: 40px;
+}
+
+#formularioNew {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+#tituloRestaurantes {
+    font-family: 'Acme';
+    font-size: 250%;
+    text-align: center;
+    margin-top: 60px;
 }

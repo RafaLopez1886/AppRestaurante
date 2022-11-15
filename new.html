@@ -40,54 +40,44 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="new.html">New</a>
                             </li>
-                        </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <p>
-        <!--Buscador-->
-    <div id="buscador">
+
+    <div id="tituloRestaurantes">
+        <h1>Crear Restaurante</h1>
+    </div>
+
+    <div id="formularioNew">
         <div class="container">
-
-            <div class="row height d-flex justify-content-center align-items-center">
-
-                <div class="col-md-8">
-
-                    <div class="search">
-                        <i class="fa fa-search"></i>
-                        <input type="text" class="form-control" placeholder="Buscar restaurante">
-                        <button class="btn btn-primary">Buscar</button>
-                    </div>
-
+            <form>
+                <div class="mb-3">
+                    <label for="insertNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
                 </div>
-
-            </div>
+                <div class="mb-3">
+                    <label for="insertDescripcion" class="form-label">Descripción</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="insertDireccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Imagen URL</label>
+                    <input type="url" class="form-control" id="urlImage">
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
         </div>
     </div>
-    <!--Restaurantes-->
+    <!--Formulario-->
     <main>
-        <div id="resultados">
-            <div class="container-fluid height">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 h-100">
+        <div id="formulario">
 
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="card shadow-sm border p-2 h-100">
-                            <img src="images/Italiano_65.png" class="img-fluid" alt="Italiano_65"
-                                style="max-height:450px" />
-                            <span class="align-bottom">
-                                <h2 class="card-title text-center">Italiano 65</h2>
-                                <div>
-                                    <h4 class="text-center">Av. 45 Nro 1 - 85 Medellín</h4>
-                                    <h3 class="text-center">Deliciosa comida italiana</h3>
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </main>
 
